@@ -1,0 +1,581 @@
+@media only screen and (max-width: 900px){
+  body{
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("background.jpg");
+    background-size:100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
+    color: whitesmoke;
+  }
+  .intro{
+    margin-top: 20px;
+    flex-basis: content;
+    align-self: center;
+  }
+  h1{
+    text-align: center;
+  }
+  #logo{
+    color: firebrick;
+  }
+  .app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-bar{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0.1;
+  }
+  button{
+    all: unset;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .main-component{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0.6;
+    text-align: center;
+  }
+  .search-bar{
+    all: unset;
+    background-color:rgba(255,255,255, 0.5);
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: firebrick solid 2px;
+    border-bottom: firebrick solid 2px;
+    border-radius: 25px;
+  }
+  .search-bar-filled,.search-bar:focus,.search-bar:hover{
+    all: unset;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: firebrick solid 2px;
+    border-bottom: firebrick solid 2px;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    background-color:rgba(255,255,255);
+  }
+  
+  .search-container{
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+    height: 25%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+  
+  #selected{
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-decoration: underline;
+    color: firebrick;
+  }
+  .nav-items:hover{
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.25s;
+    color: rgba(255, 0, 0, 0.75);
+    text-decoration: underline;
+  }
+  .suggestions-list{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+  }
+  
+  .suggestion-item{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px;
+  }
+  .suggestion-item:hover{
+    transition-duration: 0.5s;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(197, 21, 21);
+  }
+  .result-component{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  .poster{
+    align-self: center;
+    width: 87%;
+    margin: 15px;
+    border-radius: 25px;
+  }
+  .result-container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-self: center;
+  }
+  .movie-name{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: large;
+  }
+  .movie-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+  }
+  .suggestions-container{
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .search-button{
+    margin-top: 40px;
+    width: 20vw;
+    height: 5vh;
+    text-align: center;
+    background-color:firebrick;
+    text-align: center;
+    border-radius: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .search-button:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(200, 200, 200);
+    color: black;
+  }
+  .edit-form{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin: 25px;
+    height: 35vh;
+  }
+  .edit-form-poster{
+    align-self:center;
+    margin-left: 10px;
+    height: 90%;
+    border-radius: 25px;
+
+  }
+  .edit-form-movie-name{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: black;
+  }
+  .edit-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .tag-input{
+    all:unset;
+    color: black;
+    border: 1px dashed black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+    text-align: start;
+    padding: 12px;
+  }
+  #submit-button{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .suggestions-poster{
+    align-self: center;
+    width: 20vw;
+  }
+  .display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50vw;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 25px;
+    margin: 20px;
+  }
+  .about-icon{
+    height: 33%;
+  }
+  .about-list{
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.about-link{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .about-name{
+    color: brown;
+  }
+  .about-link:hover{
+    color: crimson;
+  }
+  #add-link{
+    cursor: pointer;
+    color: brown;
+    text-decoration: underline;
+  }
+  #add-link:hover{
+    color: red;
+  }
+}
+@media only screen and (min-width: 900px){
+  body{
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+  }
+  .intro{
+    margin-top: 20px;
+    flex-basis: content;
+    align-self: center;
+  }
+  h1{
+    text-align: center;
+  }
+  #logo{
+    color: firebrick;
+  }
+  .app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  #nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0.1;
+  }
+  button{
+    all: unset;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .main-component{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0.6;
+    text-align: center;
+  }
+  .search-bar{
+    all: unset;
+    background-color:rgba(255,255,255, 0.5);
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: firebrick solid 2px;
+    border-bottom: firebrick solid 2px;
+    border-radius: 25px;
+  }
+  .search-bar-filled,.search-bar:focus,.search-bar:hover{
+    all: unset;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: firebrick solid 2px;
+    border-bottom: firebrick solid 2px;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    background-color:rgba(255,255,255);
+  }
+  
+  .search-container{
+    padding: 0;
+    margin: 0;
+    width: 25vw;
+    height: 25%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+  
+  #selected{
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-decoration: underline;
+    color: firebrick;
+  }
+  .nav-items:hover{
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.25s;
+    color: rgba(255, 0, 0, 0.75);
+    text-decoration: underline;
+  }
+  .suggestions-list{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+  }
+  
+  .suggestion-item{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px;
+  }
+  .suggestion-item:hover{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: rgb(197, 21, 21);
+  }
+  .result-component{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  .movie-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    background-color: ivory;
+    color: black;
+  }
+  .poster{
+    align-self: center;
+    width: 87%;
+    margin: 15px;
+    border-radius: 25px;
+  }
+  .result-container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-self: center;
+  }
+  .movie-name{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: large;
+  }
+  .suggestions-container{
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .search-button{
+    margin-top: 40px;
+    width: 15vw;
+    height: 5vh;
+    background-color:firebrick;
+    text-align: center;
+    border-radius: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .search-button:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(200, 200, 200);
+    color: black;
+  }
+  .edit-form{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin: 25px;
+    height: 50vh;
+    flex-wrap: wrap;
+  }
+  .edit-form-poster{
+    align-self:center;
+    margin-left: 25px;
+    height: 90%;
+    border-radius: 25px;
+    
+  }
+  .edit-form-movie-name{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: black;
+  }
+  .edit-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .tag-input{
+    all:unset;
+    word-wrap: break-word;
+    color: black;
+    border: 1px dashed black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 12px;
+  }
+  #submit-button{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .suggestions-poster{
+    justify-self: center;
+    align-self: flex-start;
+    width: 10vw;
+  }
+  .display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 25px;
+    margin: 10px;
+  }
+  .about-icon{
+    height: 33%;
+  }
+  .about-list{
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.about-link{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .about-name{
+    color: brown;
+  }
+  .about-link:hover{
+    color: crimson;
+  }
+  #add-link{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #add-link:hover{
+    color: yellow;
+  }
+}
